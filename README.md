@@ -1,6 +1,6 @@
 # Myra
 
-Myra is an interface for the Smart Mirror that i created as a part of my Final year project in my graduation (2017).
+Myra is an interface for the Smart Mirror that I created as a part of my Final year project in my graduation (2017).
 
 ## Installation
 
@@ -24,7 +24,7 @@ The code is very old, so use it at your own risk. :D
 
 ## Contributing
 
-I created this in my B.tech final year. So, the code is very old and most of the libraries used are deprecatd.
+I created this in my B.tech final year. So, the code is very old and most of the libraries used are deprecated.
 
 You are welcome to update or contribute.
 
