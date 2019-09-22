@@ -1,0 +1,25 @@
+html {
+    /*cursor: none;*/
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background: #333;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    color: #ffffff;
+}
+
+.iconBig {
+    font-size: 62px;
+}
+
+.iconMid {
+    font-size: 32px;
+}
