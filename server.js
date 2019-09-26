@@ -1,11 +1,11 @@
 /**
  * Created by Rksh on 09-Apr-17.
  */
-import express, { Router } from 'express';
+var express = require('express');
 
 var app = express();
 
-var router = Router();
+var router = express.Router()
 
 var port = process.env.API_PORT || 3001;
 
