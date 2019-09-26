@@ -1,11 +1,11 @@
 /**
  * Created by Rksh on 09-Apr-17.
  */
-var express = require('express');
+import express, { Router } from 'express';
 
 var app = express();
 
-var router = express.Router();
+var router = Router();
 
 var port = process.env.API_PORT || 3001;
 
@@ -22,7 +22,7 @@ app.use(function (req, res, next) {
 // Google distance matrix api
 router.get('/distance', function (req, res) {
     var googleMapsClient = require('@google/maps').createClient({
-            key: 'AIzaSyDG3kciowNrVjcS8mbppYL1xF4JuXoR60Q'
+            key: process.env.REACT_APP_GOOGLE_MAPS_KEY
         });
         googleMapsClient.distanceMatrix({
             origins: ['Gurgaon'],

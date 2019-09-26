@@ -13,7 +13,9 @@ class NotificationComponent extends Component {
             notifications: []
         };
 
-        let websocket = new WebSocket('wss://stream.pushbullet.com/websocket/o.5X9CgpJQFxDwTAddJF6dK5lkafsDUSNv');
+        let websocket = new WebSocket('wss://stream.pushbullet.com/websocket/'
+        + process.env.REACT_APP_PUSHBULLET_KEY
+        );
 
         websocket.onopen = () => {
             console.log("onopen");

@@ -28,8 +28,8 @@ class NewsComponent extends Component {
     }
 
     getNewsFromApiAsync() {
-        let NEWS_URL = "https://newsapi.org/v1/articles?source=the-hindu&sortBy=latest" +
-            "&apiKey=6ef7bc181f304077b7e94902bee3a46d";
+        let NEWS_URL = "https://newsapi.org/v2/top-headlines?sources=the-hindu&sortBy=latest&apiKey="
+        + process.env.REACT_APP_NEWSAPI_KEY;
 
         fetch(NEWS_URL)
             .then((response) => {

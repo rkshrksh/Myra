@@ -15,7 +15,9 @@ class WeatherComponent extends Component {
             sunset: '',
             iconId: '800'
         };
-        let API_URL = "http://api.openweathermap.org/data/2.5/weather?appid=f5a2414f31bd9db23cf86aa52101eeef&units=metric";
+        let API_URL = "http://api.openweathermap.org/data/2.5/weather?appid=" +
+        process.env.REACT_APP_OPEN_WEATHER_API
+        + "&units=metric";
         this.getWeatherFromApiAsync(API_URL);
     }
 

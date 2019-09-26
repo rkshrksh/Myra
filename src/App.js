@@ -6,6 +6,7 @@ import RightComponent from "./components/right/RightComponent";
 import FooterComponent from "./components/FooterComponent";
 
 import './App.css'
+require('dotenv').config()
 
 class App extends Component {
     render() {
