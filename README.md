@@ -10,13 +10,19 @@ Use the package manager [npm] to install and run Myra.
 npm install
 ```
 
+First run this node command, to start the internal server:
+```bash
+node server.js
+```
+
+To run the whole Application interface:
 ```bash
 npm run start
 ```
 
 ## Usage
 
-I ran this app interface on a Raspberry Pi. After bootup this code used to on Startup. The interface was setuped to run in full-screen mode. If you need any help in running or understanding the code, feel free to contact me.
+I ran this app interface on a Raspberry Pi. After bootup this code used to run on Startup. The interface was setuped to run in full-screen mode. If you need any help in running or understanding the code, feel free to contact me. I will also add more details later on in this repo.
 
 I have not removed many of the API keys from the code. But the API keys are old and expired, so replace them with your own, when using.
 
