@@ -4,18 +4,30 @@ Myra is an interface for the Smart Mirror that I created as a part of my Final y
 
 ## Installation
 
-Use the package manager [npm] to install and run Myra.
+Clone the repo locally and Use the package manager [npm] to install dependancies.
 
 ```bash
 npm install
 ```
 
-First run this node command, to start the internal server:
+### Set API keys in .env file
+
+Add `.env` file in the root Myra directory and set following API KEYS:
+
+```bash
+REACT_APP_NEWSAPI_KEY="your_newsapi.org_api_key"
+REACT_APP_OPEN_WEATHER_API="your_openweathermap.org_api_key"
+GOOGLE_MAPS_KEY="your_google_maps_distance_matrix_api_key"
+```
+
+First run this node command, to start the internal distance server:
+
 ```bash
 node server.js
 ```
 
-To run the whole Application interface:
+Now in another terminal, To run the whole Application interface:
+
 ```bash
 npm run start
 ```

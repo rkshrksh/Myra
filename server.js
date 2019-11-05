@@ -7,6 +7,9 @@ var app = express();
 
 var router = express.Router()
 
+const dotenv = require('dotenv');
+dotenv.config();
+
 var port = process.env.API_PORT || 3001;
 
 app.use(function (req, res, next) {
@@ -22,7 +25,7 @@ app.use(function (req, res, next) {
 // Google distance matrix api
 router.get('/distance', function (req, res) {
     var googleMapsClient = require('@google/maps').createClient({
-            key: process.env.REACT_APP_GOOGLE_MAPS_KEY
+            key: process.env.GOOGLE_MAPS_KEY
         });
         googleMapsClient.distanceMatrix({
             origins: ['Gurgaon'],
@@ -30,10 +33,11 @@ router.get('/distance', function (req, res) {
         }, (err, response) => {
             if (!err) {
                 res.json(response);
+                // console.log(response)
             }
         });
 });
-
+console.log(process.env.GOOGLE_MAPS_KEY)
 app.use('/api', router);
 
 app.listen(port, function () {
