@@ -5,7 +5,7 @@
   "dependencies": {
     "@google/maps": "^0.3.1",
     "dotenv": "^8.1.0",
-    "express": "^4.15.2",
+    "express": "^4.17.3",
     "moment": "^2.18.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
